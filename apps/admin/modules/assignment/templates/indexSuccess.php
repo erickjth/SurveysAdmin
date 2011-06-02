@@ -55,7 +55,8 @@
 
     <div class="buttons">
         <input type="submit" class="button" value="Procesar encuestas seleccionadas" />
-        <a rel="faceboxy" href="<?php echo url_for("assignment/add"); ?>" class="button">Crear asignación</a>
+        <a rel="faceboxy" href="<?php echo url_for("assignment/addCoursAssignment"); ?>" class="button">Crear asignación</a>
+        <a rel="faceboxy" href="<?php echo url_for("assignment/addUserAssignment"); ?>" class="button">Crear asignación a usuario(s).</a>
     </div>
         
     </form>

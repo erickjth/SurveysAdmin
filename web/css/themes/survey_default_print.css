@@ -1,0 +1,53 @@
+/* 
+    Document   : survey_default
+    Created on : 19/08/2010, 01:30:48 PM
+    Author     : erick
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root { 
+    display: block;
+}
+#wrapper-content-survey{ margin-top: 30px; }
+#wrapper-content-survey div.header{ height: 100px;position: relative; margin-bottom: 10px; }
+#wrapper-content-survey div.header div.info{ float: left; height: 80px ; margin: 0 5px; width: 300px; text-align: center;padding: 5px; font-weight: bold; border: 1px solid #ccc;}
+#wrapper-content-survey div.header div.logo{ float: left; margin: 0 5px; width: 300px;border: 1px solid #ccc;}
+#wrapper-content-survey div.header div.logo img{ width: 100%;height: 90px;}
+#wrapper-content-survey div.header div.info2{ float: left;height: 80px; margin: 0 5px; width: 300px;padding: 5px; border: 1px solid #ccc;text-align: center;font-weight: bold;}
+#wrapper-content-survey div.header div.info2 span.survey-name{display: block; clear: both; margin-bottom: 5px;}
+#wrapper-content-survey div.header div.info2 span.date{ display: block; }
+
+#wrapper-content-survey div.survey-details-assig{ height: 100px; position: relative;}
+#wrapper-content-survey div.survey-details-assig p{ margin: 5px 0; }
+#wrapper-content-survey div.survey-details-assig p span.t{ font-weight: bold; padding-right: 0.5em;}
+#wrapper-content-survey div.survey-details-assig div.teacher-info{ width: 474px; float: left; padding-right: 6px; }
+#wrapper-content-survey div.survey-details-assig div.course-info{ width: 474px; float: left; padding-left: 6px;}
+
+#wrapper-content-survey div.survey-description{ padding: 15px; font-size: 0.9em;margin-bottom: 10px;border: 1px solid #ccc;  }
+
+#wrapper-content-survey div.content-body-survey { }
+#wrapper-content-survey div.content-body-survey div.content-group{ margin: 0 0 10px 0; }
+#wrapper-content-survey div.content-body-survey div.content-group div.title{ margin: 0 0 10px 0; text-align: center;font-weight: bold;text-transform: uppercase; background-color: #2D488B; color:#fff; padding: 5px 0; }
+#wrapper-content-survey div.content-body-survey div.content-group table.content-question{border-collapse:collapse;width:960px; }
+
+#wrapper-content-survey div.content-body-survey div.content-group table.content-question tr:hover{ background: #C6D6FF;color: #000; }
+#wrapper-content-survey div.content-body-survey div.content-group table.content-question tr td{border: 1px solid #ccc;padding: 5px 0;}
+#wrapper-content-survey div.content-body-survey div.content-group table.content-question tr td.index{ padding-left: 15px; width: 30px;}
+/*SURVEY TIPE SELECT*/
+#wrapper-content-survey div.content-body-survey div.content-group table.content-question tr td.text{ width: 790px;max-width: 790px;padding-left: 5px; }
+#wrapper-content-survey div.content-body-survey div.content-group table.content-question tr td.indicator{width: 140px;}
+#wrapper-content-survey div.content-body-survey div.content-group table.content-question tr td.indicator select.q-select{width: 140px;padding: 3px;}
+/*SURVEY TYPE TEXT*/
+#wrapper-content-survey div.content-body-survey div.content-group table.content-question tr td.text-type-2{ width: 610px;max-width: 610px;padding-left: 5px; }
+#wrapper-content-survey div.content-body-survey div.content-group table.content-question tr td.body-text{width: 300px;}
+#wrapper-content-survey div.content-body-survey div.content-group table.content-question tr td.body-text textarea{width: 300px;}
+
+#wrapper-content-survey div.content-body-survey div.buttons{
+    text-align: center;
+}

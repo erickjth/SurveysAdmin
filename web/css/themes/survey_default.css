@@ -1,0 +1,83 @@
+/* 
+    Document   : survey_default
+    Created on : 19/08/2010, 01:30:48 PM
+    Author     : erick
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root { 
+    display: block;
+}
+body.survey-view{background: #254271;}
+#main-content.survey-view-content{ -moz-box-shadow:none;-webkit-box-shadow:none; }
+
+#wrapper-content-survey{ margin-top: 30px; }
+#wrapper-content-survey div.header{ position: relative; margin-bottom: 10px; float:left;width:928px;}
+#wrapper-content-survey div.header div.logo{ float: left; margin: 0 5px; }
+#wrapper-content-survey div.header div.logo2{ float: right; margin: 0 5px; }
+
+/*#wrapper-content-survey div.survey-details-assig{ height: 100px; position: relative;}
+#wrapper-content-survey div.survey-details-assig p{ margin: 5px 0; }
+#wrapper-content-survey div.survey-details-assig p span.t{ font-weight: bold; padding-right: 0.5em;}
+#wrapper-content-survey div.survey-details-assig div.teacher-info{ width: 474px; float: left; padding-right: 6px; }
+#wrapper-content-survey div.survey-details-assig div.course-info{ width: 474px; float: left; padding-left: 6px;}
+*/
+#wrapper-content-survey div.survey-description{ width:928px;float:left;padding: 15px; font-size: 1em;margin-bottom: 10px;border: 1px solid #ccc;  }
+#wrapper-content-survey div.survey-description p{margin-bottom: 5px;}
+#wrapper-content-survey div.survey-description span.subtitle{font-weight: bold; clear: both; }
+
+
+#wrapper-content-survey div.content-body-survey { float:left; }
+#wrapper-content-survey div.content-body-survey div.content-group{ margin: 0 0 10px 0; }
+#wrapper-content-survey div.content-body-survey div.content-group div.title{ margin: 0 0 10px 0; text-align: center;font-weight: bold;text-transform: uppercase; background-color:#254271; color:#fff; padding: 5px 0; }
+#wrapper-content-survey table.content-question{border-collapse:collapse;width:960px; }
+#wrapper-content-survey table.content-question .question-body{margin: 5px 0 5px 0;padding: 10px 0; border-bottom: 1px dotted #2D488B; }
+#wrapper-content-survey table.content-question .question-body:hover{background: #F8F8F8;}
+#wrapper-content-survey table.content-question .question_info{ margin: 5px 0 5px;}
+#wrapper-content-survey table.content-question .question_info p.question_text{font-size: 1em;}
+#wrapper-content-survey table.content-question .question_info span.index{margin-right: 5px;font-size: 1em; font-weight: bold;}
+#wrapper-content-survey table.content-question .question_structure{ padding-left: 20px;}
+/*
+#wrapper-content-survey div.content-body-survey div.content-group table.content-question tr:hover{ background: #C6D6FF;color: #000; }
+#wrapper-content-survey div.content-body-survey div.content-group table.content-question tr td{border: 1px solid #ccc;padding: 5px 0;}
+#wrapper-content-survey div.content-body-survey div.content-group table.content-question tr td.index{ padding-left: 15px; width: 30px;}
+
+#wrapper-content-survey div.content-body-survey div.content-group table.content-question tr td.text{ width: 790px;max-width: 790px;padding-left: 5px; }
+#wrapper-content-survey div.content-body-survey div.content-group table.content-question tr td.indicator{width: 140px;}
+#wrapper-content-survey div.content-body-survey div.content-group table.content-question tr td.indicator select.q-select{width: 140px;padding: 3px;}
+
+#wrapper-content-survey div.content-body-survey div.content-group table.content-question tr td.text-type-2{ width: 610px;max-width: 610px;padding-left: 5px; }
+#wrapper-content-survey div.content-body-survey div.content-group table.content-question tr td.body-text{width: 300px;}
+#wrapper-content-survey div.content-body-survey div.content-group table.content-question tr td.body-text textarea{width: 300px;}
+*/
+#wrapper-content-survey div.content-body-survey div.buttons{text-align: center;}
+#wrapper-content-survey div.content-body-survey div.buttons input{text-align: center;font-size: 14px; padding: 5px 20px;}
+/******MATRIZ TYPE QUESTION STYLE*****/
+.matriz{ width: 100%; }
+
+.matriz tr.headers th{text-align: center; border-bottom:1px #ccc solid;  border-right:1px #ccc solid;font-weight: bold;}
+.matriz tr.items td{ border-bottom:1px #ccc solid; margin-bottom: 5px; padding-bottom: 5px;padding-top: 5px; }
+.matriz .item-text {width: 45%;padding-right: 5px;}
+.matriz tr.items{position: relative;}
+.matriz tr.items td.item-option{text-align: center;}
+.matriz tr.odd{background: #EFECE7;}
+.matriz tr.error{background:#FFDEDE;font-weight: bold;}
+.matriz tr td div.error-question{ 
+    -webkit-border-top-right-radius: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+    -moz-border-radius-topright: 10px;
+    -moz-border-radius-bottomright: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: absolute; 
+    right: -140px;
+    padding: 5px 8px;
+    background: #740000;
+    color: #fff;
+}

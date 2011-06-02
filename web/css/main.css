@@ -1,0 +1,87 @@
+html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,p,blockquote,th,td{margin:0;padding:0;}img,body,html{border:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}ol,ul {list-style:none;}caption,th {text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;}q:before,q:after{content:'';}
+
+html{ color:#666666;font-size:0.9em; font-family: verdana; }
+a,a:visited{color:#194294;text-decoration: none; }
+a img{border: none; }
+
+table{
+    font-size:11px;
+}
+
+#main-wrapper{
+    width: 960px;
+    margin: auto;  
+}
+
+#header{
+    margin: auto;
+    height: auto;
+    float: left;
+
+}
+
+#main-content{
+    position: relative;
+    margin: 10px auto;
+    float: left;
+    height: auto;
+    width: 100%;
+    padding: 5px 10px;
+    -webkit-border-radius:11px 11px 11px 11px;
+    -moz-border-radius:11px 11px 11px 11px;
+    -moz-box-shadow:0 4px 18px #C8C8C8;
+    -webkit-box-shadow:0 4px 18px #C8C8C8;
+    background: #fff;
+}
+
+
+/*************LIST COURSE SURVEY AVIABLE-**************************************/
+#content-list-survey{ padding: 10px;}
+#content-list-survey div.header-title,#sf_admin_container h1{ margin-bottom: 10px;padding: 10px; background:#2D488B;color: #fff; text-transform: uppercase; text-align: center; font-size: 1.5em;  }
+#content-list-survey div.list-survey{ margin: 0 10px 0 10px; }
+#content-list-survey div.list-survey span.name-period{ padding: 5px 0; display: block; border-bottom: 1px solid #ccc;border-top: 1px solid #ccc;font-size: 1.2em;color:#2D488B }
+#content-list-survey div.list-survey { background: url('../images/arrow-right.png') left top no-repeat ;padding-left: 30px;margin: 10px 0;}
+#content-list-survey div.list-survey p{}
+#content-list-survey div.list-survey span.sub{ font-weight: bold; text-transform: uppercase; padding-right: 5px;}
+#content-list-survey div.list-survey span.finish{background: url('../images/finish-list.png') left center no-repeat ;display: block;clear: both; color:#4BA80E;margin-left: 15px;padding-left: 18px; }
+#content-list-survey div.list-survey a{background: url('../images/todo.png') left center no-repeat ; display: block;clear: both; margin: 10px 0 0 15px;padding-left: 18px;}
+
+
+/*****************************RESPONSES PROCESS********************************/
+#result-content-wrapper{width:90%;margin: auto;}
+#content-response-process{float: left;width: 100%}
+#content-response-process .assign-content{border: 1px solid #ccc;float: left;padding: 10px 1%;margin: 5px 2%;  }
+#content-response-process .r3{width:27%;}
+#content-response-process .r2{width:43.5%;}
+#content-response-process .r1{width:94%;}
+
+#relations{ width: 60%;border: 1px dotted #ccc;margin: 20px auto 0 auto; }
+#relations h1{ background-color: #254271;color: #FFFFFF;font-weight: bold;margin: 0 0 10px; padding: 5px 0;text-align: center;text-transform: uppercase; }
+#relations ul.list li {display: block; padding: 5px 10px;font-size: 0.8em;}
+#relations ul.list li div.option-relactions{ margin-right: 10px;display: inline-block;}
+#relations ul.list li div.option-relactions a.remove{color: #333; background: url('../images/remove-row.png') left center no-repeat;padding-left: 20px;}
+#relations ul.list li div.r{color:#333;display: inline-block; padding: 3px 5px;margin: 0 3px; -webkit-border-radius:11px 11px 11px 11px;-moz-border-radius:11px 11px 11px 11px; background: #DEDEDE;}
+
+#content-response-process .assign-content .info-assign{ padding-bottom: 2px; margin-bottom: 5px; border-bottom: 1px dotted #ccc; }
+#content-response-process .assign-content .survey-details{ margin-bottom: 5px;}
+#content-response-process .assign-content .survey-details .groups{}
+#content-response-process .assign-content .survey-details .info{background-color:#FFF ;color: #254271;border-top:1px solid #254271;font-weight: bold;margin: 0;padding: 5px 0;text-align: center;text-transform: uppercase;}
+#content-response-process .assign-content .survey-details .info .select_all{font-size: 10px;font-weight: normal;color: #333; float: left;}
+#content-response-process .assign-content .survey-details .groups .group{ margin-top: 5px;}
+#content-response-process .assign-content .survey-details .groups .group .group-name{ background-color: #254271;color: #FFFFFF;font-weight: bold;margin: 0 0 10px; padding: 5px 0;text-align: center;text-transform: uppercase;}
+#content-response-process .assign-content .survey-details .groups .group table{width: 100%;}
+#content-response-process .assign-content .survey-details .groups .group table tr th{font-weight: bold;}
+#content-response-process .assign-content .survey-details .groups .group table tr th,
+#content-response-process .assign-content .survey-details .groups .group table tr td{ padding: 2px 0; border-bottom: 1px solid #ccc;}
+#content-response-process .assign-content .survey-details .groups .group table tr th.index{width: 5%;}
+#content-response-process .assign-content .survey-details .groups .group table tr th.question{width: 80%;}
+#content-response-process .assign-content .survey-details .groups .group table tr th.type{width: 10%;}
+
+#ajax-result-process .survey-question-ref{width: 80%;margin: auto;padding: 2px 10px;}
+#ajax-result-process table {width: 80%; margin: 10px auto 30px; border: 1px solid #ccc;padding: 30px 10px;}
+#ajax-result-process table tr.headers th{font-weight: bold;text-align: center; border-bottom:1px #ccc solid; border-right: 1px #ccc solid;padding: 2px 5px; }
+#ajax-result-process table tr.items td{ border-bottom:1px #ccc solid; margin-bottom: 5px; padding: 5px 0; }
+#ajax-result-process table tr.items td{text-align: center;}
+#ajax-result-process table tr.odd{background: #EFECE7;}
+#ajax-result-process table tr td.item-text{width: 30%;text-align: left;border-right: 1px #ccc solid;}
+#ajax-result-process table tr td.last_group{border-right: 1px #ccc solid;background:#DBDBDB; }

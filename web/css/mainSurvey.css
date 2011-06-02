@@ -1,0 +1,523 @@
+a.delete{
+    color: #333; 
+    background: url('../images/remove.png') left center no-repeat;
+    padding-left: 20px;margin-left: 5px;
+}
+
+a.clear{
+   float:right; 
+    display: inline;
+    background: url('../images/remove.png');
+    margin:3px 15px 3px 0px;
+    width: 16px;
+    height: 16px;
+}
+
+a.savePattern{ 
+    float:left;
+    background: url('../images/savePattern.png');
+    width: 32px;
+    height: 32px;
+    margin:0px 0px 0px 5px;
+}
+/*
+a.addDescription{ 
+    float:left;
+    background: url('../images/savePattern.png');
+    width: 32px;
+    height: 32px;
+    margin:0px 0px 0px 5px;
+}
+*/
+a.pastePattern{
+    float:left;
+    background: url('../images/paste.png');
+    width: 32px;
+    height: 32px;
+}
+#menuContenido{
+    margin: 10px auto;
+    width: 980px;
+    padding: 2px 20px 30px 20px;
+    -webkit-border-radius:11px 11px 11px 11px;
+    -moz-border-radius:11px 11px 11px 11px;
+    -moz-box-shadow:0 4px 18px #C8C8C8;
+    -webkit-box-shadow:0 4px 18px #C8C8C8;
+    background: #fff;
+}
+
+#menuContenido div.contentDefault{
+    height:140px;
+    width:auto;
+    border:#E6E6E6 1px solid;
+    padding: 10px 10px 10px 10px;
+    background-color:#F2F2F2;
+}
+
+
+#menuContenido div.contentDefault div.bloqueMenu{
+    float:left;
+    height:107px;
+    width:217px;
+    border:#D8D8D8 1px solid;
+    padding: 20px 10px 10px 10px;
+    font-size:15px;
+    text-align:center;
+    background-color:#FFF;
+}
+
+#menuContenido div.tituloBloqueMenu{
+    margin:12px 0px 5px 0px; 
+    height:45px;
+    width:auto;
+    font-size:28px;
+    text-align:center;
+
+}
+
+
+#menuContenido #contenedorSurveyInfo{  
+    border:1px solid #CCCCCC;   
+    padding: 10px 10px 10px 10px;
+    height:60px;
+    margin-bottom: 20px;
+}
+
+#menuContenido .surveyInformation{ 
+    border:1px solid #CCCCCC; 
+    float: left;
+    margin-right: 10px;
+    width: 512px;
+
+
+}
+#menuContenido .editSurveyInformation{  
+    border:1px solid #CCCCCC;    
+    width: 400px;
+    padding: 0px 10px 0px 10px;
+    float:right;
+    border: 1px solid #AC9E2;    
+    color:#415987;
+    background-color: #FCFDFD;
+}
+
+
+
+#menuContenido  #contenedorGroup{
+    padding: 10px 10px 10px 10px;
+    border:1px solid #CCCCCC;
+    width:960px;
+    height: 90px;
+    clear: both;
+}
+
+#menuContenido #infoGroup{
+
+    border:1px solid #CCCCCC; 
+    width: 550px;
+    margin-right: 10px;
+    float: left;
+    padding: 0px 10px 0px 10px;
+    border: 1px solid #AC9E2;    
+    color:#415987;
+    background-color:#FCFDFD;
+}
+
+#menuContenido #buildGroupInfo{
+    border:1px solid #CCCCCC;  
+    width: 940px;
+    padding: 0px 10px 0px 10px;
+    border: 1px solid #AC9E2;    
+    color:#415987;
+    background-color:#FCFDFD;
+    float:right;
+}
+
+
+
+/*!
+ * Ext JS Library 3.2.1
+ * Copyright(c) 2006-2010 Ext JS, Inc.
+ * licensing@extjs.com
+ * http://www.extjs.com/license
+*/
+html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,p,blockquote,th,td{margin:0;padding:0;}img,body,html{border:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}ol,ul {list-style:none;}caption,th {text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;}q:before,q:after{content:'';}
+
+html{ color:#666666;font-size:0.9em; font-family: verdana; }
+a,a:visited{color:#194294;text-decoration: none; }
+a img{border: none; }
+
+table{
+    font-size:11px;
+}
+
+#main-wrapper{
+    width: 960px;
+    margin: auto;  
+}
+#header{
+    margin: auto;
+    height: auto;
+    float: left;
+
+}
+#header div.admin-menu{
+    position: relative;float: left;
+    margin: 10px 0;
+}
+#box-info-survey-create{float: left;}
+#main-content{
+    position: relative;
+    margin: 20px auto;
+    height: auto;
+    padding: 5px 10px;
+    -webkit-border-radius:11px 11px 11px 11px;
+    -moz-border-radius:11px 11px 11px 11px;
+    -moz-box-shadow:0 4px 18px #C8C8C8;
+    -webkit-box-shadow:0 4px 18px #C8C8C8;
+    background: #fff;
+}
+
+#main-content div.content-default{
+    margin-top: 5px;
+}
+#main-content div.content-default div.title{
+    margin-bottom: 10px;padding: 10px; background:#2D488B;color: #fff; text-transform: uppercase; text-align: center; font-size: 1.5em;
+}
+#main-content div.content-default div.removeSurveyInformation{
+    background-color: #EDEDED;
+    padding: 10px 10px 10px 10px;
+    color:#638C94;
+    height: auto;
+    width: auto;
+    border: 2px solid #BBE9ED;
+    margin: 10px auto;
+
+}
+#main-content div.content-default div.buttons{
+    text-align: center;
+    margin: 10px;
+}
+#main-content div.content-default div.buttons a{
+    margin: 0 10px;
+}
+
+#main-content div.content-default ul .group{
+    /*
+     border:#CCCCCC 1px solid; 
+     padding:10px 10px 10px 10px;
+     border: 1px solid #CCCCCC;
+     font-weight: bold;
+     margin-bottom: 10px;
+    */
+    display:block;
+    background:#F6F6F6;
+    border:1px solid #CCC;
+    color:#4A3C31;
+    margin:8px 0px 8px 0px;
+    padding:5px 5px 10px 10px;
+}
+#main-content div.content-default .ui-state-highlight{ 
+    background:#FFF0A5; 
+    border:1px solid #FED22F;
+}
+#main-content div.content-default .question{
+    display:block;
+    background:#F6F6F6;
+    border:1px solid #CCC;
+    color:#4A3C31;
+    margin:10px 0px 10px 0px;
+    padding:5px 5px 10px 10px;
+}
+
+
+#main-content div.content-default #infoGroup{
+    display:block;
+    padding:5px 5px 10px 10px;
+    border:1px dotted #CCC;
+    margin:10px 0px 10px 0px;
+
+}
+
+
+
+#main-content div.content-default #questionGroup{
+    background-color:#f1f5ff;
+    border:1px solid #DFEFFC;
+    margin:10px 0px 10px 0px;
+    padding:5px 10px 5px 10px;
+
+}
+#main-content div.content-default ul .group .content-group{  
+
+}
+#main-content div.content-default ul .group .option-group{
+    float:right;
+}
+
+#main-content div.content-default ul .group .option-group .drag{
+    display:none;
+}
+#main-content div.content-default ul .group-active:hover .drag{  
+    display: inline;
+}
+
+#main-content div.content-default .tablelist .off{
+    display:none;
+}
+
+#main-content div.content-default .tablelist .on{
+    display:inline;
+}
+
+#main-content div.content-default div.data{  
+    display:block;
+    background:#F6F6F6;
+    border:1px solid #CCC;
+    color:#4A3C31;
+    margin:8px 0px 8px 0px;
+    padding:5px 5px 10px 10px;
+}
+#main-content div.content-default .surveyInformation{
+
+    padding: 0px 10px 10px 0px;
+    display:block;
+    padding:5px 5px 10px 10px;
+    border:1px dotted #CCC;
+    margin:10px 0px 10px 0px;
+}
+#main-content div.content-default .surveyInformation .editSurveyInformation{
+    float:right;
+}
+/*****************************************************LOGIN CSS********************************************************/
+#login-wrapper{
+    width: 400px;
+    height: auto;
+    margin: 100px auto;
+    padding: 5px 10px;
+    -webkit-border-radius:11px 11px 11px 11px;
+    -moz-border-radius:11px 11px 11px 11px;
+    -moz-box-shadow:0 4px 18px #C8C8C8;
+    -webkit-box-shadow:0 4px 18px #C8C8C8;
+}
+#login-wrapper div.title{
+    margin-bottom: 10px;padding: 10px; background:#2D488B;color: #fff; text-transform: uppercase; text-align: center; font-size: 1.5em;
+}
+#login-wrapper p.fields{ margin: 5px 0;  }
+#login-wrapper p.fields label{ display: block;}
+#login-wrapper p.fields input.input{font-size: 1.2em;background: url("../images/form_input.gif") repeat-x scroll 0 0 #FFFFFF;border:1px solid #DDDDDD; padding: 10px; width:380px; }
+#login-wrapper p.buttons{ margin: 10px 0; text-align: center }
+/*******************************************************ENDLOGIN*******************************************************/
+
+
+/**LOADING**/
+#loading{
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    width: 64px;
+    height: 64px;
+    background: url(../images/load64.gif) no-repeat transparent center;
+    display: none;
+}
+/**TABLE**/
+table.tablelist {
+    border-collapse: collapse;
+    padding:10px;
+    text-align:center;
+    width:100%;
+    font-size: 0.9em;
+}
+table.tablelist tr th {
+    background: #EDEDED;
+    height: 23px;
+    border:1px solid;
+    text-align: center;
+    text-align: left;
+    padding: 0 0 0 10px;
+    border-color: #FFFFFF #EDEDED #EDEDED;
+}
+table.tablelist tr td {
+    border-bottom: 1px solid;
+    border-color: #FFFFFF #EDEDED #EDEDED;
+    padding: 5px 0 5px 10px;
+    text-align: left;
+}
+table.tablelist tr:hover {
+    background:#F9F9F9;
+}
+
+
+/*******************************ELEMENTOS FORM*****************************************/
+
+select{    
+    background: url("../images/form_input.gif") repeat-x scroll 0 0 #FFFFFF;
+    border: 1px solid ;
+    color: #000;
+    text-indent: 2px;
+    border-color: #ccc;
+    color:#666666;
+}
+select option{ color:#666666; }
+input.small { width: 50px;padding: 3px; }
+input.big { width: 500px;padding: 3px;}
+input.normal{ width: 150px;padding: 3px; }
+select.small { width: 50px;padding: 3px;}
+select.normal { width: 150px;padding: 3px;}
+select.big { width: 350px; padding: 3px;}
+select.fix { width: 100%; padding: 3px;}
+textarea.normal{ width: 150px;padding: 3px; }
+textarea.big { width: 350px; padding: 3px;}
+textarea.fix { width: 100%; padding: 3px;height: 300px;}
+
+button, input[type="submit"], input[type="reset"],input[type="button"],a.button{
+    padding: 5px 15px;
+    margin: 5px 10px;
+    background:url("../images/form_button.png") repeat-x transparent center;
+    border:medium none;
+    color:#FFFFFF;
+    cursor:pointer;
+    text-align:center;
+    font-size: 12px;
+    display: inline-block;
+    -moz-border-radius:5px;
+    -moz-box-shadow:0 4px 18px #C8C8C8;
+    -webkit-box-shadow:0 4px 18px #C8C8C8;
+    -webkit-border-radius:5px;
+}
+button:hover, input[type="submit"]:hover, input[type="reset"]:hover,input[type="button"]:hover,a.button:hover{
+    background:url("../images/form_button_hover.png") repeat-x transparent center;
+}
+input[type="text"],input[type="password"],textarea{
+    background: url("../images/form_input.gif") repeat-x scroll 0 0 #FFFFFF;
+    border:1px solid #DDDDDD;
+}
+/********************************FORM VALIDATE*****************************************/
+
+label.error{ color:red;background: url(../images/error-label.png) left center no-repeat;font-size: 0.8em;padding-left: 20px; }
+#error { width: 100%; float: left; }
+#error label{float: left;display: block;}
+input.error{background: url(../images/error-label.png) right center no-repeat;}
+
+/********************************CREATE SURVEY ADMIN**********************************/
+
+#selected-survey-info{ border: 1px solid #CCCCCC; padding: 5px; float: left; width: 512px;clear: both;}
+#selected-survey-info p{}
+#selected-survey-info p span{font-weight: bold;}
+#box-info-survey-create{ border: 1px solid #CCCCCC;float: left; margin-top: 10px;padding: 5px; width: 950px; }
+#box-info-survey-create div.options,#box-info-survey-create div.list{ margin-bottom: 20px; }
+#box-info-survey-create div.list ul li { margin: 5px 0;}
+#box-info-survey-create div.list ul li span { width: 50px;padding: 3px; font-size: 0.9em;}
+
+/********************************Assignments******************************************/
+div.options{
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+#assignments_grids_coontent div.grid{
+    margin-top: 10px;
+}
+div.form-content{
+    width: 300px;
+    height: auto;
+}
+div.form-content form p,div.form-content-fix form p{
+    margin: 10px 0;
+}
+div.form-content form p.buttons,div.form-content-fix form p.buttons{
+    margin-top: 20px;
+    text-align: center;
+}
+div.form-content form p label{
+    display: block;
+    font-size: 1.3em;
+}
+div.form-content-fix{
+    width: 600px;
+    height: auto;
+    margin: auto;
+}
+div.form-content-fix form p label{
+    display: block;
+}
+div.form-content div.title, div.form-content-fix div.title{
+    border-bottom: 1px solid #ccc;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    padding: 5px;
+    margin: 10px 0;
+}
+
+
+/********ERROR PAGE**********/
+#go-back{
+
+}
+
+#content-error div{
+    text-align: center;
+}
+#content-error div.logos img{
+    width: 30%;
+    height: 30%;
+    margin: 10px;
+}
+
+#content-error div.error-text p.text404{
+    padding: 15px 0;
+    font-size: 50px;
+    font-weight: bold;
+
+}
+
+/*****  Avisos *******/
+#notification-sf{ position: absolute; top: 1px;right: 1px; width: auto;height: auto; }
+#notification-sf div.error{ padding: 10px 5px 10px 30px; border: 1px solid #DE2208 ; background: #ccc; background: #ececec url('../images/error-img.png') no-repeat center left }
+#notification-sf div.notice{ padding: 10px 5px 10px 30px; border: 1px solid #3DDE08; background: #ccc; background: #ececec url('../images/notice-img.png') no-repeat center left; }
+
+div.notice{
+    background: #ececec url('../images/notice-img.png') no-repeat center left;
+
+}
+div.error{
+    background: #ececec url('../images/error-img.png') no-repeat center left;
+}
+
+
+/**************************************************************CLASS EXTJS GRID*************************************************************/
+.grid-add{ background-image: url(../images/icon/add.png) !important; background-repeat: no-repeat; }
+.grid-folder{ background-image: url(../images/icon/add-folder.png) !important; background-repeat: no-repeat; }
+.grid-trash{ background-image: url(../images/icon/trash.png) !important; background-repeat: no-repeat; }
+.grid-delete{ background-image: url(../images/icon/delete.png) !important; background-repeat: no-repeat; }
+.grid-edit{ background-image: url(../images/icon/edit.png) !important; background-repeat: no-repeat; }
+.grid-excel{ background-image: url(../images/icon/excel.png) !important; background-repeat: no-repeat; }
+.grid-copy{ background-image: url(../images/icon/copy.png) !important; background-repeat: no-repeat; }
+.grid-cut{ background-image: url(../images/icon/cut.png) !important; background-repeat: no-repeat; }
+.grid-paste{ background-image: url(../images/icon/paste.png) !important; background-repeat: no-repeat; }
+.grid-sort{ background-image: url(../images/icon/sort.png) !important; background-repeat: no-repeat; }
+
+/************************************************************LIST COURSE SURVEY AVIABLE-***************************************************/
+#content-list-survey{ padding: 10px;}
+#content-list-survey div.header-title,#sf_admin_container h1{ margin-bottom: 10px;padding: 10px; background:#2D488B;color: #fff; text-transform: uppercase; text-align: center; font-size: 1.5em;  }
+#content-list-survey div.period-section{ margin: 0 10px 0 10px; }
+#content-list-survey div.period-section span.name-period{ padding: 5px 0; display: block; border-bottom: 1px solid #ccc;border-top: 1px solid #ccc;font-size: 1.2em;color:#2D488B }
+#content-list-survey div.period-section div.period-course-assig{ background: url('../images/arrow-right.png') left top no-repeat ;padding-left: 30px;margin: 10px 0;}
+#content-list-survey div.period-section div.period-course-assig p{}
+#content-list-survey div.period-section div.period-course-assig p span.sub{ font-weight: bold; text-transform: uppercase; padding-right: 5px;}
+#content-list-survey div.period-section div.period-course-assig p span.finish{background: url('../images/finish-list.png') left center no-repeat ;display: block;clear: both; color:#4BA80E;margin-left: 15px;padding-left: 18px; }
+#content-list-survey div.period-section div.period-course-assig p a{background: url('../images/todo.png') left center no-repeat ; display: block;clear: both; margin-left: 15px;padding-left: 18px;   }
+
+/************************************************************REPORT PAGE***************************************************/
+#report-content{ padding: 10px 80px 10px 80px;margin-top: 5px; text-align: center;}
+#report-content h1{ margin-bottom: 40px; text-align: center; }
+#report-content a{ margin: 0 40px;  }
+
+#config-teacher-result {display: none;font-size: 1.2em; margin:30px 0 10px 0;text-align: center; }
+#config-teacher-result p{ margin: 5px 0 0 0;   }
+#config-teacher-result input{ padding: 5px; font-size: 1.2em;}
+
+#teacher-result p { font-size: 1em; padding: 5px 0;  }
+#teacher-result p span{font-weight: bold; }
+
+

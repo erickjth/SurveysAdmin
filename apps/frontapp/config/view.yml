@@ -1,0 +1,20 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/13-View
+
+default:
+  http_metas:
+    content-type: text/html
+
+  metas:
+    title:        SAVIO Survey
+    description:  symfony project
+    keywords:     savio, utb
+    language:     es
+    robots:       index, follow
+
+  stylesheets:    [main.css,jquery_plugins/jgrow.css]
+
+  javascripts:    [jquery152min.js,jquery_validatemin.js,jgrow.js,main_front.js]
+
+  has_layout:     true
+  layout:         layout

@@ -1,0 +1,11 @@
+# default values
+
+all:
+  .general:
+    nameApp: SAVIOSurvey
+    baseurl: http://vmoodle-vforge/saviosurvey/frontapp.php
+    URLMoodle: http://vmoodle-vforge/
+    mongodb_host: localhost:27017
+    mongodb_name: surveysavio
+    mongodb_user: null
+    mongodb_pass: null
